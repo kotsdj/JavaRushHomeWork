@@ -8,6 +8,7 @@ public class Cat {
     private static int catsCount = 0;
 
     public static void addNewCat() {
+        catsCount+=1;
         //напишите тут ваш код
     }
 }
