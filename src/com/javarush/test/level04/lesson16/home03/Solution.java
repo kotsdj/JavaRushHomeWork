@@ -24,14 +24,8 @@ public class Solution
             a = Integer.parseInt(sa);
 
             if (a!=-1)
-            {
-
                 sum+=a;
-
-            }
-            else
-            {
-
+            else{
                 System.out.println(sum += a);
                 break;
             }
