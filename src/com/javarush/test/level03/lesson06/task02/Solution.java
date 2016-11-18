@@ -12,13 +12,14 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        for (int i=1; i<11; i++){
-            int res = 0;
-            System.out.print(res+i +" ");
+        //напишите тут ваш код
+        int [] mas = {1,2,3,4,5,6,7,8,9,10};
+        for(int i : mas)
+        {
+            for (int j : mas)
+                System.out.print(i * j + " ");
+            System.out.println();
         }
-        for (int i=1; i<11; i++){
-            int res = 0;
-            System.out.print(" \n"+ (res+i) +" ");
-        }
+
     }
 }
