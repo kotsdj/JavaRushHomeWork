@@ -10,26 +10,22 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
+        //напишите тут ваш код
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 
-        String sa = r.readLine();
-        int a = Integer.parseInt(sa);
-        String sb = r.readLine();
-        int b = Integer.parseInt(sb);
-        String sc = r.readLine();
-        int c = Integer.parseInt(sc);
 
-        int a1 = 0;
-        int a2 = 0;
-        int a3 = 0;
+        int a = Integer.parseInt(r.readLine());
+        int b = Integer.parseInt(r.readLine());
+        int c = Integer.parseInt(r.readLine());
 
-        if (a>b & a>c)
-            a1=a;
-        else if (b>a & b>c)
-            a2=b;
-        else
-            a3=c;
+        if (a>b || a>c)
 
-        System.out.println(a1);
+
+
+
+
+
+            System.out.println(a);
+
     }
 }
