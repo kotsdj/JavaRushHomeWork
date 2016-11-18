@@ -15,6 +15,23 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+
+        String sa = r.readLine();
+        int a = Integer.parseInt(sa);
+
+        String sb = r.readLine();
+        int b = Integer.parseInt(sb);
+
+        for (int i=0; i<a;i++){
+
+            for (int j=0; j<b;j++){
+                System.out.print(8);
+
+            }
+            System.out.println();
+        }
+
 
     }
 }
