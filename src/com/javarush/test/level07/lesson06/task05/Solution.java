@@ -14,7 +14,6 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
-        //напишите тут ваш код
         ArrayList<String> list = new ArrayList<String>();
 
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
@@ -24,6 +23,13 @@ public class Solution
             list.add(sa);
         }
 
+        for (int i=0; i<13;i++){
+            String s =  list.remove(list.size() - 1);
+            list.add(0, s);
+        }
 
+        for (int i=0; i<list.size();i++){
+            System.out.println(list.get(i));
+        }
     }
 }
