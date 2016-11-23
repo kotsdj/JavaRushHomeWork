@@ -4,8 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-
-import static java.util.Arrays.sort;
+import java.util.TreeSet;
 
 /* Задача по алгоритмам
 Задача: Написать программу, которая вводит с клавиатуры 5 чисел и выводит их в возрастающем порядке.
@@ -27,25 +26,16 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        BufferedReader reader  = new BufferedReader(new InputStreamReader(System.in));
 
-        for (int i=0;i<5;i++)
-        {
-            BufferedReader r  = new BufferedReader(new InputStreamReader(System.in));
+        //напишите тут ваш код
 
-            String sa = r.readLine();
-            int a = Integer.parseInt(sa);
+        TreeSet<Integer> set = new TreeSet<Integer>();
 
-            list.add(a);
-        }
+        for (int i=1; i<6; i++)
+            set.add(Integer.parseInt(reader.readLine()));
 
-        String listName = "";
-
-
-
-        for (int i = 0; i < list.size(); i++) {
-            listName = listName + list.get(i) + "\n";
-        }
-        System.out.println(listName);
+        for (Integer t: set)
+            System.out.println(t);
     }
 }
