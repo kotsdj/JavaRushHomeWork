@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 /* Три массива
 1. Введи с клавиатуры 20 чисел, сохрани их в список и рассортируй по трём другим спискам:
@@ -19,10 +20,37 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        BufferedReader reader  = new BufferedReader(new InputStreamReader(System.in));
+
+        //напишите тут ваш код
+
+        List<Integer> list = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
+        List<Integer> list3 = new ArrayList<>();
+
+        for (int i=0; i<20; i++)
+        {
+            int si = Integer.parseInt(reader.readLine());
+            list.add(si);
+            if ((si%3==0) && (si%2==0)){
+                list1.add(si);
+                list2.add(si);
+            }else if (si%3==0)
+                list1.add(si);
+            else if (si%2==0)
+                list2.add(si);
+            else
+                list3.add(si);
+        }
+        printList(list1);
+        printList(list2);
+        printList(list3);
     }
 
     public static void printList(List<Integer> list)
     {
-        //напишите тут ваш код
+        for (Integer t: list)
+            System.out.println(t);
     }
 }
